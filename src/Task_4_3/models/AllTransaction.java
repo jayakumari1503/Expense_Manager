@@ -71,8 +71,8 @@ public class AllTransaction {
         System.out.print("Required month summary :");
 
         if(dailyTransaction.containsKey(key)) {
-            float totalExpense = 0;
-            float totalIncome = 0;
+            float totalExpense;
+            float totalIncome;
 
             for (int i = 0; i < dailyTransaction.get(key).size(); i++) {
                 totalExpense = dailyTransaction.get(key).get(i).expense;
